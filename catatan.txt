@@ -1,0 +1,37 @@
+### DOM ###
+# bentuk sintaks: document.(pilih elemen).(pilih bagian element)
+# contoh: document.getElementById("elemen").value
+
+### variabel ###
+# cara deklarasi = var, let, const
+
+### tipe data ###
+# bentuk = int, string, boolean (kondisi)
+
+### Array ###
+# bentuk [...isi1, ...isi2]
+
+### operasi dasar ###
+# aritmatika: +, -, *, /
+# perbandingan: ==, ===, >, <, !=, !==
+# logika: &&, ||, !
+
+### struktur kontrol ###
+
+# kondisi:
+if, if-else, if-else if, if-else if-else
+
+# perulangan:
+for, foreach, while, while-do
+
+### fungsi ###
+
+# function:
+function namaFungsi(parameter) {
+    ...perintah
+}
+
+# arrow function:
+const namaFungsi = (parameter) => {
+    ...perintah
+}

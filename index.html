@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | Belajar JS Part 3</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div id="input">
+      <h4>TAMBAH KONTAK</h4>
+      <span id="close" onclick="tutupPanel()">X</span>
+      <input type="text" id="nama-tambah" placeholder="Isi nama..." />
+      <input type="text" id="telpon-tambah" placeholder="Isi telpon..." />
+      <input type="text" id="email-tambah" placeholder="Isi email..." />
+      <button type="button" onclick="tambahKontak()">TAMBAH KONTAK</button>
+    </div>
+
+    <div id="edit">
+      <span id="close" onclick="tutupPanel()">X</span>
+      <h4>EDIT KONTAK</h4>
+      <input type="text" id="kode-edit" placeholder="Isi nama..." disabled />
+      <input type="text" id="nama-edit" placeholder="Isi nama..." />
+      <input type="text" id="telpon-edit" placeholder="Isi telpon..." />
+      <input type="text" id="email-edit" placeholder="Isi email..." />
+      <button type="button" onclick="editKontak()">EDIT KONTAK</button>
+      <button type="button" onclick="hapusKontak()">HAPUS KONTAK</button>
+    </div>
+
+    <div id="output">
+      <div id="navigasi">
+        <a href="./" id="logo">KONTAK</a>
+        <div id="panel">
+          <input
+            type="text"
+            id="cari"
+            oninput="cariKontak()"
+            placeholder="Cari kontak..."
+          />
+          <span id="foot">
+            <button type="button" onclick="tambahBaru()">TAMBAH</button>
+          </span>
+        </div>
+      </div>
+      <table
+        border="1"
+        style="width: 100%; border-collapse: collapse"
+        id="tabel-display"
+      ></table>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="./index.js"></script>
